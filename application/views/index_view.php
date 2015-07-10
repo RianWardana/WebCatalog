@@ -36,21 +36,29 @@
 						<th><a href="/film/2/<?php if($order_by == '1') {echo '2';} else {echo '1';} ?>">Title</a></th>
 						<th><a href="/film/3/<?php if($order_by == '1') {echo '2';} else {echo '1';} ?>">Release Year</a></th>
 						<th><a href="/film/4/<?php if($order_by == '1') {echo '2';} else {echo '1';} ?>">Size (MB)</a></th>
+						<th>PC / HDD</th>
 					</tr>
 				</thead>
 				
 				<tbody>
 					<?php
-						foreach($index as $row_index) {echo "
-							
-							<tr>
+						foreach($index as $row_index) {
+						
+							echo "<tr>";
+							echo "
 								<td>{$row_index->id}</td>
 								<td class='text-left'>{$row_index->title}</td>
 								<td>{$row_index->year}</td>
-								<td>{$row_index->size}</td>
-							</tr>
+								<td>{$row_index->size}</td>					
+							";
 							
-						";}
+							echo "<td>";
+							if ($row_index->in_pc) echo "<i class='fa fa-desktop'></i> ";
+							if ($row_index->in_hdd) echo "<i class='fa fa-hdd-o'></i>"; 
+							echo "</td>";
+							
+							echo "</tr>";
+						}
 					?>
 				</tbody>
 			</table>

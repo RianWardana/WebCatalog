@@ -61,6 +61,7 @@
 							<th>Title</th>
 							<th>Release Year</th>
 							<th>Size (MB)</th>
+							<th>PC / HDD</th>
 							<th>Edit / Save / Clear</th>
 						</tr>
 					</thead>
@@ -75,6 +76,10 @@
 									<td><input class='text disabled' readonly='readonly' type='text' maxlength='40' size='50' value=\"{$row_index->title}\" name='title_{$no}'></td>
 									<td><input class='text disabled' readonly='readonly' type='text' maxlength='4'  size='4'   value='{$row_index->year}'    name='year_{$no}' style='text-align: center;'></td>
 									<td><input class='text disabled' readonly='readonly' type='text' maxlength='4'  size='4'   value='{$row_index->size}'    name='size_{$no}' style='text-align: center;'></td>
+									<td>
+										<input class='check' onclick='return false' type='checkbox' value='1'". ($row_index->in_pc ? ' checked ' : '') ."name='pc_{$no}'> /
+										<input class='check' onclick='return false' type='checkbox' value='1'". ($row_index->in_hdd ? ' checked ' : '') ."name='hdd_{$no}'>
+									</td>
 									<td>
 										<button type='button' class='btn btn-default' onclick='disableThis.call(this); return false;'><i class='fa fa-edit'></i></button>
 										<button type='submit' class='btn btn-default' disabled='disabled' name='save_{$no}'  value='save_{$no}'><i class='fa fa-save'></i></button>

@@ -14,9 +14,10 @@ function disableThis() {
    var that = this;
    $(function(){
        $( that ).parent().siblings().children(".text").toggleClass("disabled");
-	   //$( that ).parent().siblings().children(".text").toggleAttr("disabled", "disabled");
 	   $( that ).parent().siblings().children(".text").toggleAttr("readonly", "readonly");
 	   $( that ).siblings(".btn").toggleAttr("disabled", "disabled");
+	   $( that ).parent().siblings().children(".check").toggleAttr('onclick', 'return false');
+	   //$( that ).parent().siblings().children(".check").prop('disabled', ($(that).parent().siblings().children().is(':disabled') ? false : true));
    });
 }
 
