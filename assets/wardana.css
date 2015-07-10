@@ -1,0 +1,199 @@
+/****************************************
+Halo.
+Rian Wardana
+****************************************/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	margin-bottom: 100px;	/* Height-nya footer */
+}
+
+th {
+	vertical-align: middle !important;
+	text-align: center !important;
+	color: #cf4823;
+}
+
+th a {
+	color: #cf4823;
+}
+
+th a:hover {
+	text-decoration: none;
+	color: #FA9D00;
+}
+
+input {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #ccc;
+	background-color: white;
+}
+
+input.disabled {
+	border: 1px inset transparent;
+	background-color: transparent;
+}
+
+/***************************************/
+
+.navbar-toggle { border: 0px }
+.navbar-toggle:hover { background-color: transparent !important; }
+.navbar-toggle:focus { background-color: transparent !important; }
+
+.navbar-main {
+	background: #222222;
+	border: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/***************************************/
+
+#jumbo-jadwal {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background-color: #cf4823;
+	/*#F8A500 #FA9D00 #cf4823*/
+}
+
+@media (max-width: 767px) {
+	#nav.affix { position: static; }
+}
+
+@media (min-width: 768px) {
+	#nav {
+		z-index: 90;
+		margin-bottom: -0px;
+	}
+
+	#nav.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+}
+.navbar-action {
+	background: #be4220;
+	border: 0;
+	border-radius: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/***************************************/
+
+@media (max-width: 767px) {
+	.button-action { padding: 10px 50px 0px; }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.icon-action { display: none !important; }
+}
+
+.icon-action { margin-right: 10px; }
+
+.btn-danger {
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 20px;
+	color: white;
+}
+
+.btn-danger:hover {
+	background-color: #9d361a;
+	border: 2px solid white;
+	color: white;
+}
+
+.btn-danger:focus {
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+
+.btn-default:focus {
+	background-color: white !important;
+	border: 1px solid #ccc;
+}
+
+/***************************************/
+
+.alert-container {
+	margin-top: -20px;
+}
+
+.alert {
+	border-radius: 0px;
+}
+
+.normal {
+	text-transform: none;
+	text-align: left;
+	margin: 10px;
+}
+
+.chori {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+/***************************************/
+
+.navbar-text {
+	float: center;
+	text-align: center;
+	color: white !important;
+}
+
+.manage .col-sm-6 {
+	margin-bottom: 50px;
+}
+
+.legend-manage {
+	color: #9d361a;
+}
+
+.btn-link:hover {
+	text-decoration: none;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input.manage-file-text {
+  background-color: white !important;
+  cursor: text !important;
+}
